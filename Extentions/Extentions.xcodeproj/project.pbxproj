@@ -10,6 +10,7 @@
 		3532972120D2727500FBFA7C /* Extentions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3532971720D2727400FBFA7C /* Extentions.framework */; };
 		3532972620D2727500FBFA7C /* ExtentionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3532972520D2727500FBFA7C /* ExtentionsTests.swift */; };
 		3532972820D2727500FBFA7C /* Extentions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3532971A20D2727400FBFA7C /* Extentions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3532973220D2749B00FBFA7C /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3532973120D2749B00FBFA7C /* Extentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		3532972020D2727500FBFA7C /* ExtentionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtentionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3532972520D2727500FBFA7C /* ExtentionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionsTests.swift; sourceTree = "<group>"; };
 		3532972720D2727500FBFA7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3532973120D2749B00FBFA7C /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				3532971A20D2727400FBFA7C /* Extentions.h */,
+				3532973120D2749B00FBFA7C /* Extentions.swift */,
 				3532971B20D2727400FBFA7C /* Info.plist */,
 			);
 			path = Extentions;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					3532971620D2727400FBFA7C = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					3532971F20D2727500FBFA7C = {
 						CreatedOnToolsVersion = 9.3;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3532973220D2749B00FBFA7C /* Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +344,7 @@
 		3532972C20D2727500FBFA7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Extentions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		3532972D20D2727500FBFA7C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		3532972F20D2727500FBFA7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Z847JSHNU;
 				INFOPLIST_FILE = ExtentionsTests/Info.plist;
@@ -407,6 +416,7 @@
 		3532973020D2727500FBFA7C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Z847JSHNU;
 				INFOPLIST_FILE = ExtentionsTests/Info.plist;
